@@ -28,7 +28,7 @@ define('THIS_PAGE',basename($_SERVER['PHP_SELF']));
 //die;
 
 switch(THIS_PAGE){
-
+//switch makes THIS PAGE reusable for other pages 
     case 'index.php':
         $title = "Gift's IT162 Portal Page";
         $logo = 'fa-home';
@@ -66,8 +66,9 @@ echo makeLinks($nav1); #in which $nav1 is an associative array of links
 function makeLinks($linkArray)
 {
     $myReturn = '';
-
+//myReturn is similar to setting a variable
     foreach($linkArray as $url => $text)
+        //foreach for each allows us to get each item and investigate it one at a time. this case we investigate linkarray 
     {
         if($url == THIS_PAGE)
         {//selected page - add class reference
