@@ -10,15 +10,15 @@
 			font-style:italic;
 			font-size:70%;
 			font-weight:bold;
-			color:#f00;
+			color:#000;
 		}
 
         input:required {
-              border: 1px solid red;
+              border: 1px solid #ccc;
         }
 
          input:optional, textarea:optional {
-             background-color:#f1f1f1;
+             background-color:#fff;
              border:1px solid #ccc;
         }
 
