@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Raleway, verdana;
+    line-height: 1.4;
+}
+html {
+    background-color:#ccc;
+    background: #14b1ab;
+}
+
+main.wrapper {
+    background-color:#fff;
+    background-color:#ffffdd;
+    overflow:auto;
+}
+h1 {
+    padding: 0 0 0 10px;
+}
+h1>a, p a {
+    text-decoration: none;
+    color:#000;
+}
+
+p a:hover {
+    color: #999;
+}
+
+.snippet-code {
+    font-family: monospace;
+    margin-left: 10%;
+}
+
+span {
+    margin-left: 5%;
+}
+.logo {
+    color:black;
+    margin-left:1%;
+    text-shadow:1px 1px #ccc;
+    font-size:1.25em;
+}
+
+img.content {
+    width: 100%;
+}
+
+figure {
+    border-left: 1px solid #999;
+    border-bottom: 1px solid #999;
+    margin-bottom: 3%;
+}
+
+figcaption {
+    margin: 3%;
+    
+}
+/* font awesome icon styles */
+i.logo {
+    color:darkred; /* a less boring color */
+    text-shadow:1px 1px #ccc; /* gives the icon a little depth */
+    font-size:1.25em; /* font awesome icons are text, so make it a bit bigger */
+    margin-left:1%; /* this keeps the icon from being squeeezed to the left */
+}
+
+/* Change background color of navigation on selected page */
+           ul.topnav li a.selected {
+        		background-color: #ccc;
+        		color:#000;
+                background-color: #f9d56e;
+        		color:#000;
+   }
+
+/*Hide Agenda view calendar*/
+
+.embed-container.agenda-view {
+    display: none;
+}
+
+/* Embed Responsively Rules! */
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 5%;
+    max-width: 98%;
+} 
+
+div.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*Map page telephone*/
+
+.tel {
+text-decoration: none;
+color: #000;
+}
+.tel:hover {
+color: #999;
+}
+
+footer {
+	clear:both;
+    padding: 0 0 0 20px;
+    border-top: .5px solid #14b1ab;
+    color: #555;
+}
+
+
+/* START RESPONSIVE STYLES */
+
+/* DESKTOP */
+@media all and (min-width:1400px) {
+	
+   main.wrapper {
+		width:80%;
+		margin:auto;
+	}
+
+    section {
+		width:65%;
+		float:left;
+        padding: 0 20px;
+	}
+	
+     aside {	
+		width:34%;
+		float:right;
+        padding: 50px 20px 20px 10px;
+	}
+			
+    img.desktop {
+      		float:left;
+       		width:50%;
+            display:inline-block;
+            padding: 0 20px 0 0;
+    }
+    
+    img.tablet, img.phone {
+       	display:none;
+    	}  
+    
+    /* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        		background-color: #ccc;
+        		color:#000;
+        background-color: #f9d56e;
+        		color:#000;
+   	 }
+}
+
+
+/* TABLET */
+@media all and (min-width:737px) and (max-width:1399px) {
+	
+	section {
+		width:60%;
+		float:left;
+        padding: 0 20px;
+	}
+	
+	aside {	
+		width:39%;
+		float:right;
+        padding: 0 20px 20px 20px;
+	}
+	
+    img.tablet {
+       	width:100%;
+        display:inline-block;
+        padding: 0 20px 0 0;    
+    }
+    
+    img.desktop, img.phone {
+       	display:none;
+    }  
+    
+    
+    /* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        background-color: #ccc;
+        color:#000;
+        background-color: #f9d56e;
+        color:#000;
+    }
+}
+
+/*Calendar Rules for Phone*/
+@media all and (max-width:1200px){
+    
+/*    show agenda rule calendar*/
+    .embed-container.agenda-view {
+        display: block;
+    }
+/*    hide month-view calendar*/
+    .embed-container.month-view {
+        display: none;
+    }
+}
+
+/* PHONE */
+@media all and (max-width:736px) {
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    section {
+        padding: 0 20px;
+	}
+	
+	aside {	
+
+        padding: 0 20px 20px 20px;
+	}
+    
+    img.phone {
+       	width:100%;
+        display:inline-block;
+        padding: 10px 20px;
+        border-radius: 50%;
+    }
+    
+    img.tablet, img.desktop {
+       	display:none;
+    	}  
+
+}
